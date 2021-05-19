@@ -1,24 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftBookSecondApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="2" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePi-Kn-ASU">
+                                <rect key="frame" x="135" y="392" width="105" height="129"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVU-AU-MXE">
+                                <rect key="frame" x="20" y="711" width="335" height="57"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                    <color key="titleShadowColor" name="AccentColor"/>
+                                </state>
+                            </button>
+                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpi-3X-sA8">
+                                <rect key="frame" x="135" y="233" width="105" height="129"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AnN-2A-lV9">
+                                <rect key="frame" x="135" y="74" width="105" height="129"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="kpi-3X-sA8" firstAttribute="width" secondItem="AnN-2A-lV9" secondAttribute="width" id="0gp-vu-jgb"/>
+                            <constraint firstItem="AnN-2A-lV9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="2tC-jw-8oK"/>
+                            <constraint firstItem="wVU-AU-MXE" firstAttribute="top" secondItem="ePi-Kn-ASU" secondAttribute="bottom" constant="190" id="5bV-t1-nYk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wVU-AU-MXE" secondAttribute="bottom" constant="10" id="Alw-SN-fed"/>
+                            <constraint firstItem="kpi-3X-sA8" firstAttribute="top" secondItem="AnN-2A-lV9" secondAttribute="bottom" constant="30" id="BiI-Af-hnW"/>
+                            <constraint firstItem="AnN-2A-lV9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Fo3-xQ-0p7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AnN-2A-lV9" secondAttribute="trailing" constant="135" id="I2r-pq-fdG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ePi-Kn-ASU" secondAttribute="trailing" constant="135" id="JSv-fD-Ewf"/>
+                            <constraint firstItem="ePi-Kn-ASU" firstAttribute="height" secondItem="AnN-2A-lV9" secondAttribute="height" id="NNK-6Q-brM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wVU-AU-MXE" secondAttribute="trailing" constant="20" id="U2m-og-rk7"/>
+                            <constraint firstItem="kpi-3X-sA8" firstAttribute="height" secondItem="AnN-2A-lV9" secondAttribute="height" id="fEh-Ld-w4A"/>
+                            <constraint firstItem="kpi-3X-sA8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="g6B-th-ivR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kpi-3X-sA8" secondAttribute="trailing" constant="135" id="lZi-yo-MhX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wVU-AU-MXE" secondAttribute="bottom" constant="10" id="u8h-zP-2u1"/>
+                            <constraint firstItem="ePi-Kn-ASU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="wq6-tl-mi8"/>
+                            <constraint firstItem="ePi-Kn-ASU" firstAttribute="width" secondItem="AnN-2A-lV9" secondAttribute="width" id="xzn-Zu-qdT"/>
+                            <constraint firstItem="ePi-Kn-ASU" firstAttribute="top" secondItem="kpi-3X-sA8" secondAttribute="bottom" constant="30" id="yqd-v4-Bza"/>
+                            <constraint firstItem="wVU-AU-MXE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zOX-gS-RCj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="ePi-Kn-ASU" id="zcn-t9-DI0"/>
+                        <outlet property="redLightView" destination="AnN-2A-lV9" id="oq5-Jt-GZ4"/>
+                        <outlet property="yellowLightView" destination="kpi-3X-sA8" id="vVH-hz-cks"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
